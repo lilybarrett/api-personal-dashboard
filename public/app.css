@@ -1,0 +1,28 @@
+.top-bar {
+  margin-bottom: 20px;
+}
+
+.menu-text a {
+  color: #6A5ACD;
+}
+
+#location {
+  text-align: center;
+}
+
+#weather {
+  text-align: center;
+}
+
+body {
+  color: #6A5ACD;
+  background-color: #6A5ACD;
+  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Boston_Back_Bay_reflection.jpg");
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width:1024px;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;*/
+}

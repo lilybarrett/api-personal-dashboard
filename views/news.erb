@@ -1,0 +1,8 @@
+<div class="callout primary" id="news">
+  <h3>Top News from the NYTimes</h3>
+    <% @stories.each do |story| %>
+      <p><strong><a href="<%=story["url"]%>"><%= story["title"] %></a></strong></p>
+      <p><%= story["byline"] %></p>
+      <p><strong>Summary:</strong> <%= story["abstract"] %></p>
+    <% end %>
+</div>

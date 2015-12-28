@@ -1,0 +1,785 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://freegeoip.net/json/127.0.0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freegeoip.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      X-Database-Date:
+      - Wed, 02 Dec 2015 07:06:58 GMT
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9999'
+      X-Ratelimit-Reset:
+      - '3600'
+      Date:
+      - Mon, 07 Dec 2015 15:01:13 GMT
+      Content-Length:
+      - '170'
+    body:
+      encoding: UTF-8
+      string: |
+        {"ip":"127.0.0.1","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":0,"longitude":0,"metro_code":0}
+    http_version: 
+  recorded_at: Mon, 07 Dec 2015 15:01:13 GMT
+- request:
+    method: get
+    uri: http://freegeoip.net/json/127.0.0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freegeoip.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      X-Database-Date:
+      - Wed, 02 Dec 2015 07:06:58 GMT
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9982'
+      X-Ratelimit-Reset:
+      - '2777'
+      Date:
+      - Tue, 22 Dec 2015 18:57:51 GMT
+      Content-Length:
+      - '170'
+    body:
+      encoding: UTF-8
+      string: |
+        {"ip":"127.0.0.1","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":0,"longitude":0,"metro_code":0}
+    http_version: 
+  recorded_at: Tue, 22 Dec 2015 18:57:55 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/e319c8f9426bc133/conditions/q/Massachusetts/Boston.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.wunderground.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.064'
+      Last-Modified:
+      - Tue, 22 Dec 2015 18:57:07 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 22 Dec 2015 18:57:51 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Tue, 22 Dec 2015 18:57:51 GMT
+      Content-Length:
+      - '2604'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"conditions\": 1\n  }\n\t}\n  ,\t\"current_observation\":
+        {\n\t\t\"image\": {\n\t\t\"url\":\"http://icons.wxug.com/graphics/wu2/logo_130x80.png\",\n\t\t\"title\":\"Weather
+        Underground\",\n\t\t\"link\":\"http://www.wunderground.com\"\n\t\t},\n\t\t\"display_location\":
+        {\n\t\t\"full\":\"Boston, MA\",\n\t\t\"city\":\"Boston\",\n\t\t\"state\":\"MA\",\n\t\t\"state_name\":\"Massachusetts\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"zip\":\"02101\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"latitude\":\"42.37046814\",\n\t\t\"longitude\":\"-71.02747345\",\n\t\t\"elevation\":\"6.00000000\"\n\t\t},\n\t\t\"observation_location\":
+        {\n\t\t\"full\":\"North End waterfront Boston, Boston, Massachusetts\",\n\t\t\"city\":\"North
+        End waterfront Boston, Boston\",\n\t\t\"state\":\"Massachusetts\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"latitude\":\"42.365311\",\n\t\t\"longitude\":\"-71.051521\",\n\t\t\"elevation\":\"39
+        ft\"\n\t\t},\n\t\t\"estimated\": {\n\t\t},\n\t\t\"station_id\":\"KMABOSTO124\",\n\t\t\"observation_time\":\"Last
+        Updated on December 22, 1:56 PM EST\",\n\t\t\"observation_time_rfc822\":\"Tue,
+        22 Dec 2015 13:56:39 -0500\",\n\t\t\"observation_epoch\":\"1450810599\",\n\t\t\"local_time_rfc822\":\"Tue,
+        22 Dec 2015 13:57:07 -0500\",\n\t\t\"local_epoch\":\"1450810627\",\n\t\t\"local_tz_short\":\"EST\",\n\t\t\"local_tz_long\":\"America/New_York\",\n\t\t\"local_tz_offset\":\"-0500\",\n\t\t\"weather\":\"Light
+        Rain\",\n\t\t\"temperature_string\":\"57.0 F (13.9 C)\",\n\t\t\"temp_f\":57.0,\n\t\t\"temp_c\":13.9,\n\t\t\"relative_humidity\":\"94%\",\n\t\t\"wind_string\":\"Calm\",\n\t\t\"wind_dir\":\"SSW\",\n\t\t\"wind_degrees\":198,\n\t\t\"wind_mph\":0.0,\n\t\t\"wind_gust_mph\":0,\n\t\t\"wind_kph\":0,\n\t\t\"wind_gust_kph\":0,\n\t\t\"pressure_mb\":\"1013\",\n\t\t\"pressure_in\":\"29.91\",\n\t\t\"pressure_trend\":\"-\",\n\t\t\"dewpoint_string\":\"55
+        F (13 C)\",\n\t\t\"dewpoint_f\":55,\n\t\t\"dewpoint_c\":13,\n\t\t\"heat_index_string\":\"NA\",\n\t\t\"heat_index_f\":\"NA\",\n\t\t\"heat_index_c\":\"NA\",\n\t\t\"windchill_string\":\"NA\",\n\t\t\"windchill_f\":\"NA\",\n\t\t\"windchill_c\":\"NA\",\n\t\t\"feelslike_string\":\"57.0
+        F (13.9 C)\",\n\t\t\"feelslike_f\":\"57.0\",\n\t\t\"feelslike_c\":\"13.9\",\n\t\t\"visibility_mi\":\"2.0\",\n\t\t\"visibility_km\":\"3.2\",\n\t\t\"solarradiation\":\"56\",\n\t\t\"UV\":\"1.0\",\"precip_1hr_string\":\"0.07
+        in ( 2 mm)\",\n\t\t\"precip_1hr_in\":\"0.07\",\n\t\t\"precip_1hr_metric\":\"
+        2\",\n\t\t\"precip_today_string\":\"0.18 in (5 mm)\",\n\t\t\"precip_today_in\":\"0.18\",\n\t\t\"precip_today_metric\":\"5\",\n\t\t\"icon\":\"rain\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/rain.gif\",\n\t\t\"forecast_url\":\"http://www.wunderground.com/US/MA/Boston.html\",\n\t\t\"history_url\":\"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KMABOSTO124\",\n\t\t\"ob_url\":\"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=42.365311,-71.051521\",\n\t\t\"nowcast\":\"\"\n\t}\n}\n"
+    http_version: 
+  recorded_at: Tue, 22 Dec 2015 18:57:55 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/topstories/v1/technology.json?api-key=e73485455b749162847c8af01e987e54:2:73833966
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nytimes.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-01.mashery.com
+      X-Amz-Id-2:
+      - WSjBZ79FSW8SsxS3DHfxOdRylnK9IedmyoH/YJrk3IdvZfV0bQAIqLkLi3L12UHWSCvu4jjCpsI=
+      X-Amz-Request-Id:
+      - 9F9DD9468699E9E7
+      Date:
+      - Sun, 27 Dec 2015 20:29:20 GMT
+      Last-Modified:
+      - Sun, 27 Dec 2015 20:25:19 GMT
+      Etag:
+      - '"fc9bcce41609fddb4fad5cdca15895bf"'
+      Accept-Ranges:
+      - bytes
+      Content-Type:
+      - text/json
+      Content-Length:
+      - '66293'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","copyright":"Copyright (c) 2015 The New York Times Company.
+        All Rights Reserved.","section":"technology","last_updated":"2015-12-27T15:25:07-05:00","num_results":30,"results":[{"section":"Technology","subsection":"","title":"A
+        Surgery Center That Doubles as an Idea Lab","abstract":"At a Memorial Sloan
+        Kettering outpatient surgery center in Manhattan, innovations include data
+        tracking and other techniques to improve care, but some worry about transparency.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/technology\/a-surgery-center-that-doubles-as-an-idea-lab.html","byline":"By
+        NATASHA SINGER","item_type":"Article","updated_date":"2015-12-26T13:34:58-5:00","created_date":"2015-12-26T13:35:05-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Hospitals","Data-Mining
+        and Database Marketing","Innovation"],"org_facet":["Memorial Sloan-Kettering
+        Cancer Center"],"per_facet":["Brett A. Simon"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27TECHNO\/27TECHNO-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Dr.
+        Brett A. Simon, the director of Memorial Sloan Kettering Cancer Center&rsquo;s
+        new Josie Robertson Surgery Center, says innovative technology and work flows
+        make the center &ldquo;a learning lab for new systems.&rdquo;","copyright":"Bryan
+        Thomas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27TECHNO\/27TECHNO-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Dr.
+        Brett A. Simon, the director of Memorial Sloan Kettering Cancer Center&rsquo;s
+        new Josie Robertson Surgery Center, says innovative technology and work flows
+        make the center &ldquo;a learning lab for new systems.&rdquo;","copyright":"Bryan
+        Thomas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27TECHNO\/27TECHNO-articleInline.jpg","format":"Normal","height":123,"width":190,"type":"image","subtype":"photo","caption":"Dr.
+        Brett A. Simon, the director of Memorial Sloan Kettering Cancer Center&rsquo;s
+        new Josie Robertson Surgery Center, says innovative technology and work flows
+        make the center &ldquo;a learning lab for new systems.&rdquo;","copyright":"Bryan
+        Thomas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27TECHNO\/27TECHNO-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Dr.
+        Brett A. Simon, the director of Memorial Sloan Kettering Cancer Center&rsquo;s
+        new Josie Robertson Surgery Center, says innovative technology and work flows
+        make the center &ldquo;a learning lab for new systems.&rdquo;","copyright":"Bryan
+        Thomas for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27TECHNO\/27TECHNO-superJumbo.jpg","format":"superJumbo","height":1329,"width":2048,"type":"image","subtype":"photo","caption":"Dr.
+        Brett A. Simon, the director of Memorial Sloan Kettering Cancer Center&rsquo;s
+        new Josie Robertson Surgery Center, says innovative technology and work flows
+        make the center &ldquo;a learning lab for new systems.&rdquo;","copyright":"Bryan
+        Thomas for The New York Times"}]},{"section":"Technology","subsection":"","title":"Jet.com\u2019s
+        Strategy: Low Prices, Fast Delivery, Happy Workers","abstract":"The start-up\u2019s
+        founder and chief says happiness, in particular the happiness of his employees,
+        will separate his company from ventures that have failed.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/technology\/jetcoms-strategy-low-prices-fast-delivery-happy-workers.html","byline":"By
+        DAVID STREITFELD","item_type":"Article","updated_date":"2015-12-26T06:01:15-5:00","created_date":"2015-12-26T06:01:20-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Work-Life
+        Balance","Labor and Jobs","E-Commerce","Happiness"],"org_facet":["Jet.com
+        Inc"],"per_facet":["Lore, Marc (1971- )"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27JETJP3\/27JETJP3-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"The
+        Jet.com warehouse in Swedesboro, N.J. The start-up is trying to become a major
+        force in the $350 billion e-commerce market in the United States.","copyright":"Cole
+        Wilson for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27JETJP3\/27JETJP3-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"The
+        Jet.com warehouse in Swedesboro, N.J. The start-up is trying to become a major
+        force in the $350 billion e-commerce market in the United States.","copyright":"Cole
+        Wilson for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27JETJP3\/27JETJP3-articleInline.jpg","format":"Normal","height":138,"width":190,"type":"image","subtype":"photo","caption":"The
+        Jet.com warehouse in Swedesboro, N.J. The start-up is trying to become a major
+        force in the $350 billion e-commerce market in the United States.","copyright":"Cole
+        Wilson for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27JETJP3\/27JETJP3-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"The
+        Jet.com warehouse in Swedesboro, N.J. The start-up is trying to become a major
+        force in the $350 billion e-commerce market in the United States.","copyright":"Cole
+        Wilson for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27JETJP3\/27JETJP3-superJumbo.jpg","format":"superJumbo","height":1489,"width":2048,"type":"image","subtype":"photo","caption":"The
+        Jet.com warehouse in Swedesboro, N.J. The start-up is trying to become a major
+        force in the $350 billion e-commerce market in the United States.","copyright":"Cole
+        Wilson for The New York Times"}]},{"section":"Technology","subsection":"","title":"When
+        a Unicorn Start-Up Stumbles, Its Employees Get Hurt","abstract":"Employees
+        at Good Technology, once valued at $1.1 billion, found their shares made practically
+        worthless by a sale to BlackBerry for $425 million.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/technology\/when-a-unicorn-start-up-stumbles-its-employees-get-hurt.html","byline":"By
+        KATIE BENNER","item_type":"Article","updated_date":"2015-12-23T09:46:13-5:00","created_date":"2015-12-23T09:46:15-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Start-ups","Mergers,
+        Acquisitions and Divestitures"],"org_facet":["Good Technology","BlackBerry"],"per_facet":["Wyatt,
+        Christy"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27-JET\/27-JET-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Peter
+        and Maria Hoey"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27-JET\/27-JET-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Peter
+        and Maria Hoey"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27-JET\/27-JET-articleInline.jpg","format":"Normal","height":112,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Peter
+        and Maria Hoey"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27-JET\/27-JET-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Peter
+        and Maria Hoey"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27-JET\/27-JET-superJumbo.jpg","format":"superJumbo","height":1206,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Peter
+        and Maria Hoey"}]},{"section":"World","subsection":"Asia Pacific","title":"China
+        Passes Antiterrorism Law That Critics Fear May Overreach","abstract":"Opponents
+        who had seen a draft version said it grants broad new powers that could be
+        abused to monitor peaceful citizens and steal commercial secrets.","url":"http:\/\/www.nytimes.com\/2015\/12\/28\/world\/asia\/china-passes-antiterrorism-law-that-critics-fear-may-overreach.html","byline":"By
+        CHRIS BUCKLEY","item_type":"Article","updated_date":"2015-12-27T07:50:29-5:00","created_date":"2015-12-27T07:50:36-5:00","published_date":"2015-12-28T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Computers
+        and the Internet","Terrorism"],"org_facet":"","per_facet":"","geo_facet":["China"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/28\/world\/28china\/28china-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"The
+        police presence was increased in the Sanlitun neighborhood of Beijing over
+        the weekend after several foreign embassies warned of heightened security
+        risks there around Christmas.","copyright":"Goh Chai Hin\/Agence France-Presse
+        \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/28\/world\/28china\/28china-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"The
+        police presence was increased in the Sanlitun neighborhood of Beijing over
+        the weekend after several foreign embassies warned of heightened security
+        risks there around Christmas.","copyright":"Goh Chai Hin\/Agence France-Presse
+        \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/28\/world\/28china\/28china-articleInline.jpg","format":"Normal","height":131,"width":190,"type":"image","subtype":"photo","caption":"The
+        police presence was increased in the Sanlitun neighborhood of Beijing over
+        the weekend after several foreign embassies warned of heightened security
+        risks there around Christmas.","copyright":"Goh Chai Hin\/Agence France-Presse
+        \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/28\/world\/28china\/28china-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"The
+        police presence was increased in the Sanlitun neighborhood of Beijing over
+        the weekend after several foreign embassies warned of heightened security
+        risks there around Christmas.","copyright":"Goh Chai Hin\/Agence France-Presse
+        \u2014 Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/28\/world\/28china\/28china-superJumbo.jpg","format":"superJumbo","height":1411,"width":2048,"type":"image","subtype":"photo","caption":"The
+        police presence was increased in the Sanlitun neighborhood of Beijing over
+        the weekend after several foreign embassies warned of heightened security
+        risks there around Christmas.","copyright":"Goh Chai Hin\/Agence France-Presse
+        \u2014 Getty Images"}]},{"section":"Technology","subsection":"","title":"Common
+        Stock Ownership Spreads Among Start-Up Investors","abstract":"Institutional
+        investors typically own preferred stock in technology start-ups. Now more
+        of them also own common stock, which may lead to unintended consequences.","url":"http:\/\/bits.blogs.nytimes.com\/2015\/12\/27\/common-stock-ownership-spreads-among-start-up-investors\/","byline":"By
+        KATIE BENNER","item_type":"Blogpost","updated_date":"2015-12-27T06:00:08-5:00","created_date":"2015-12-27T06:03:33-5:00","published_date":"2015-12-27T06:00:08-5:00","material_type_facet":"News","kicker":"Bits","des_facet":"","org_facet":"","per_facet":"","geo_facet":"","multimedia":""},{"section":"Technology","subsection":"","title":"Bollywood
+        and U.S. Media Giants Try to Induce Indians to Pay for Video","abstract":"Both
+        local entertainment companies, as well as Netflix, Amazon and 21st Century
+        Fox, hope to persuade Indians to pay for online streaming, but changing current
+        habits will be difficult.","url":"http:\/\/www.nytimes.com\/2015\/12\/28\/technology\/bollywood-and-us-media-giants-try-to-induce-indians-to-pay-for-video.html","byline":"By
+        VINDU GOEL","item_type":"Article","updated_date":"2015-12-27T05:30:14-5:00","created_date":"2015-12-27T05:30:16-5:00","published_date":"2015-12-28T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Video
+        Recordings, Downloads and Streaming","Web-Original Programming","Online Advertising"],"org_facet":["Rajshri
+        Entertainment","Eros International","YouTube.com"],"per_facet":"","geo_facet":["India"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/28bollywood-web1\/28bollywood-web1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Aparajita
+        Jamwal, a yoga instructor, filming an instructional video.","copyright":"Asmita
+        Parelkar for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/28bollywood-web1\/28bollywood-web1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Aparajita
+        Jamwal, a yoga instructor, filming an instructional video.","copyright":"Asmita
+        Parelkar for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/28bollywood-web1\/28bollywood-web1-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Aparajita
+        Jamwal, a yoga instructor, filming an instructional video.","copyright":"Asmita
+        Parelkar for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/28bollywood-web1\/28bollywood-web1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Aparajita
+        Jamwal, a yoga instructor, filming an instructional video.","copyright":"Asmita
+        Parelkar for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/28bollywood-web1\/28bollywood-web1-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Aparajita
+        Jamwal, a yoga instructor, filming an instructional video.","copyright":"Asmita
+        Parelkar for The New York Times"}]},{"section":"Business Day","subsection":"","title":"An
+        Entrepreneur Juggles Six Companies and One Worker: Herself","abstract":"With
+        companies that offer custom-painted bike helmets and tricycle rentals, among
+        other things, Danielle Baskin has come to realize she can\u2019t do it alone.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/business\/an-entrepreneur-juggles-six-companies-and-one-worker-herself.html","byline":"By
+        CLAIRE MARTIN","item_type":"Article","updated_date":"2015-12-26T12:52:35-5:00","created_date":"2015-12-26T12:52:37-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["E-Commerce","Entrepreneurship"],"org_facet":["Inkwell
+        Helmets Inc","Peddler Pop-Ups","Signmaker.nyc"],"per_facet":["Baskin, Danielle
+        J (1988- )"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27PROTO1\/27PROTO1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Danielle
+        Baskin painting bicycle helmets in her East Village studio for one of her
+        six companies.","copyright":"Nicole Bengiveno\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27PROTO1\/27PROTO1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Danielle
+        Baskin painting bicycle helmets in her East Village studio for one of her
+        six companies.","copyright":"Nicole Bengiveno\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27PROTO1\/27PROTO1-articleInline.jpg","format":"Normal","height":113,"width":190,"type":"image","subtype":"photo","caption":"Danielle
+        Baskin painting bicycle helmets in her East Village studio for one of her
+        six companies.","copyright":"Nicole Bengiveno\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27PROTO1\/27PROTO1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Danielle
+        Baskin painting bicycle helmets in her East Village studio for one of her
+        six companies.","copyright":"Nicole Bengiveno\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/business\/27PROTO1\/27PROTO1-superJumbo.jpg","format":"superJumbo","height":1219,"width":2048,"type":"image","subtype":"photo","caption":"Danielle
+        Baskin painting bicycle helmets in her East Village studio for one of her
+        six companies.","copyright":"Nicole Bengiveno\/The New York Times"}]},{"section":"Business
+        Day","subsection":"International Business","title":"In Sweden, a Cash-Free
+        Future Nears","abstract":"Few places are tilting toward a cashless future
+        as quickly as Sweden, which has become hooked on the convenience of paying
+        by app and plastic.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/business\/international\/in-sweden-a-cash-free-future-nears.html","byline":"By
+        LIZ ALDERMAN","item_type":"Article","updated_date":"2015-12-26T06:01:18-5:00","created_date":"2015-12-26T06:01:27-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Economic
+        Conditions and Trends","Banking and Financial Institutions","Mobile Commerce
+        and Payments"],"org_facet":["Abba (Music Group)"],"per_facet":"","geo_facet":["Sweden"],"multimedia":""},{"section":"Technology","subsection":"","title":"A
+        Silicon Valley for Drones, in North Dakota","abstract":"Encouraged by the
+        state, a burgeoning industry in unmanned aircraft draws on local technical
+        expertise and pilots.","url":"http:\/\/www.nytimes.com\/2015\/12\/26\/technology\/a-silicon-valley-for-drones-in-north-dakota.html","byline":"By
+        QUENTIN HARDY","item_type":"Article","updated_date":"2015-12-25T05:30:39-5:00","created_date":"2015-12-25T05:30:41-5:00","published_date":"2015-12-26T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Drones
+        (Pilotless Planes)"],"org_facet":["Botlink LLC"],"per_facet":["Dalrymple,
+        John (1948- )","Muehler, Shawn P (1985- )","Zimmerman, Terri F (1963- )"],"geo_facet":["North
+        Dakota"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/00DRONE-top\/00DRONE-top-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"At
+        the Grand Forks Air Force Base in North Dakota, an instructor makes sure that
+        the wings of a SandShark unmanned aircraft have clearance in a classroom.","copyright":"Tim
+        Gruber for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/00DRONE-top\/00DRONE-top-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"At
+        the Grand Forks Air Force Base in North Dakota, an instructor makes sure that
+        the wings of a SandShark unmanned aircraft have clearance in a classroom.","copyright":"Tim
+        Gruber for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/00DRONE-top\/00DRONE-top-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"At
+        the Grand Forks Air Force Base in North Dakota, an instructor makes sure that
+        the wings of a SandShark unmanned aircraft have clearance in a classroom.","copyright":"Tim
+        Gruber for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/00DRONE-top\/00DRONE-top-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"At
+        the Grand Forks Air Force Base in North Dakota, an instructor makes sure that
+        the wings of a SandShark unmanned aircraft have clearance in a classroom.","copyright":"Tim
+        Gruber for The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/11\/business\/00DRONE-top\/00DRONE-top-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"At
+        the Grand Forks Air Force Base in North Dakota, an instructor makes sure that
+        the wings of a SandShark unmanned aircraft have clearance in a classroom.","copyright":"Tim
+        Gruber for The New York Times"}]},{"section":"Technology","subsection":"","title":"Security
+        Experts and Officials Diverge on ISIS as Hacking Threat","abstract":"Officials
+        wonder aloud if public infrastructure could be digitally disabled, but researchers
+        say ISIS is not nearly so sophisticated, or inclined.","url":"http:\/\/www.nytimes.com\/2015\/12\/25\/technology\/security-experts-and-officials-diverge-on-isis-as-hacking-threat.html","byline":"By
+        NICOLE PERLROTH","item_type":"Article","updated_date":"2015-12-24T18:45:22-5:00","created_date":"2015-12-24T18:45:24-5:00","published_date":"2015-12-25T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Cyberwarfare
+        and Defense","Terrorism"],"org_facet":["Islamic State in Iraq and Syria (ISIS)","Lizard
+        Squad","Twitter"],"per_facet":["Ferizi, Ardit","Hussain, Junaid (1994-2015)"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/25cyber-web\/25cyber-web-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"George
+        Osborne, Britain''s chancellor of the Exchequer, says ISIS is trying to develop
+        the ability to digitally disable public infrastructure. Others are less convinced.","copyright":"Pool
+        photo by Andy Rain"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/25cyber-web\/25cyber-web-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"George
+        Osborne, Britain''s chancellor of the Exchequer, says ISIS is trying to develop
+        the ability to digitally disable public infrastructure. Others are less convinced.","copyright":"Pool
+        photo by Andy Rain"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/25cyber-web\/25cyber-web-articleInline.jpg","format":"Normal","height":136,"width":190,"type":"image","subtype":"photo","caption":"George
+        Osborne, Britain''s chancellor of the Exchequer, says ISIS is trying to develop
+        the ability to digitally disable public infrastructure. Others are less convinced.","copyright":"Pool
+        photo by Andy Rain"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/25cyber-web\/25cyber-web-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"George
+        Osborne, Britain''s chancellor of the Exchequer, says ISIS is trying to develop
+        the ability to digitally disable public infrastructure. Others are less convinced.","copyright":"Pool
+        photo by Andy Rain"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/business\/25cyber-web\/25cyber-web-superJumbo.jpg","format":"superJumbo","height":1468,"width":2048,"type":"image","subtype":"photo","caption":"George
+        Osborne, Britain''s chancellor of the Exchequer, says ISIS is trying to develop
+        the ability to digitally disable public infrastructure. Others are less convinced.","copyright":"Pool
+        photo by Andy Rain"}]},{"section":"Technology","subsection":"","title":"The
+        Perils Facing Tech Start-Up Employees","abstract":"Employees at venture-backed
+        start-ups can be left holding the bag when the company stumbles. Discuss.","url":"http:\/\/bits.blogs.nytimes.com\/2015\/12\/24\/daily-report-the-perils-facing-tech-start-up-employees\/","byline":"By
+        PUI-WING TAM","item_type":"Blogpost","updated_date":"2015-12-24T09:20:12-5:00","created_date":"2015-12-24T09:21:31-5:00","published_date":"2015-12-24T09:20:12-5:00","material_type_facet":"News","kicker":"Bits","des_facet":"","org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"http:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbLarge.jpg","format":"thumbLarge","height":129,"width":129,"type":"image","subtype":"photo","caption":"","copyright":""},{"url":"http:\/\/static01.nyt.com\/images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleInline.jpg","format":"Normal","height":135,"width":190,"type":"image","subtype":"photo","caption":"","copyright":""}]},{"section":"Technology","subsection":"Personal
+        Tech","title":"Parental Controls for Smartphones","abstract":"Steps to limit
+        what children can see and do on a smartphone.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/technology\/personaltech\/parental-controls-for-smartphones.html","byline":"By
+        BRIAN X. CHEN","item_type":"Article","updated_date":"2015-12-23T15:57:01-5:00","created_date":"2015-12-23T15:57:03-5:00","published_date":"2015-12-24T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Parenting","Smartphones"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techfix-side\/24techfix-side-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Inside
+        the iPhone\u2019s settings app, a setting called Restrictions allows a parent
+        to enable or disable features.","copyright":"Stephen Lam\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techfix-side\/24techfix-side-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Inside
+        the iPhone\u2019s settings app, a setting called Restrictions allows a parent
+        to enable or disable features.","copyright":"Stephen Lam\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techfix-side\/24techfix-side-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Inside
+        the iPhone\u2019s settings app, a setting called Restrictions allows a parent
+        to enable or disable features.","copyright":"Stephen Lam\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techfix-side\/24techfix-side-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Inside
+        the iPhone\u2019s settings app, a setting called Restrictions allows a parent
+        to enable or disable features.","copyright":"Stephen Lam\/Getty Images"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techfix-side\/24techfix-side-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Inside
+        the iPhone\u2019s settings app, a setting called Restrictions allows a parent
+        to enable or disable features.","copyright":"Stephen Lam\/Getty Images"}]},{"section":"World","subsection":"Asia
+        Pacific","title":"Wi-Fi, A.T.M.s and Turbo-Flush Toilets Highlight China\u2019s
+        New Public Restrooms","abstract":"Modern technology has changed nearly every
+        facet of life in China, and now public toilets are getting a makeover. But
+        some question the use of resources.","url":"http:\/\/www.nytimes.com\/2015\/12\/17\/world\/asia\/china-toilets-fangshan-restrooms.html","byline":"By
+        JAVIER C. HERN\u00c1NDEZ","item_type":"Article","updated_date":"2015-12-17T01:32:28-5:00","created_date":"2015-12-16T23:56:18-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Bathrooms
+        and Toilets","Waste Materials and Disposal","Conservation of Resources"],"org_facet":"","per_facet":"","geo_facet":["Beijing
+        (China)"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/world\/17CHINALETTER01\/17CHINALETTER01-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"The
+        Fangshan district of Beijing offers a state-of-the-art public toilet equipped
+        with Wi-Fi, an A.T.M., chargers for mobile phones and electric vehicles, and
+        personal television screens.","copyright":"Gilles Sabrie for The New York
+        Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/world\/17CHINALETTER01\/17CHINALETTER01-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"The
+        Fangshan district of Beijing offers a state-of-the-art public toilet equipped
+        with Wi-Fi, an A.T.M., chargers for mobile phones and electric vehicles, and
+        personal television screens.","copyright":"Gilles Sabrie for The New York
+        Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/world\/17CHINALETTER01\/17CHINALETTER01-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"The
+        Fangshan district of Beijing offers a state-of-the-art public toilet equipped
+        with Wi-Fi, an A.T.M., chargers for mobile phones and electric vehicles, and
+        personal television screens.","copyright":"Gilles Sabrie for The New York
+        Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/world\/17CHINALETTER01\/17CHINALETTER01-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"The
+        Fangshan district of Beijing offers a state-of-the-art public toilet equipped
+        with Wi-Fi, an A.T.M., chargers for mobile phones and electric vehicles, and
+        personal television screens.","copyright":"Gilles Sabrie for The New York
+        Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/world\/17CHINALETTER01\/17CHINALETTER01-superJumbo.jpg","format":"superJumbo","height":1366,"width":2048,"type":"image","subtype":"photo","caption":"The
+        Fangshan district of Beijing offers a state-of-the-art public toilet equipped
+        with Wi-Fi, an A.T.M., chargers for mobile phones and electric vehicles, and
+        personal television screens.","copyright":"Gilles Sabrie for The New York
+        Times"}]},{"section":"Magazine","subsection":"","title":"Ghosts in the Machine","abstract":"Social
+        media has changed the way we mourn, for the better.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/magazine\/ghosts-in-the-machine.html","byline":"By
+        JENNA WORTHAM","item_type":"Article","updated_date":"2015-12-23T08:36:13-5:00","created_date":"2015-12-23T08:36:20-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Social
+        Media","Death and Dying"],"org_facet":["Instagram Inc","Facebook Inc"],"per_facet":["Jean-Baptiste,
+        Kyle (1993-2015)"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/magazine\/27TLTL-ss-death-promo\/27TLTL-ss-slide-OZ88-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Yoshi Sodeoka."},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/magazine\/27TLTL-ss-death-promo\/27TLTL-ss-slide-OZ88-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Yoshi Sodeoka."},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/magazine\/27TLTL-ss-death-promo\/27TLTL-ss-slide-OZ88-articleInline.jpg","format":"Normal","height":148,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Yoshi Sodeoka."},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/magazine\/27TLTL-ss-death-promo\/27TLTL-ss-slide-OZ88-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Yoshi Sodeoka."},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/magazine\/27TLTL-ss-death-promo\/27TLTL-ss-slide-OZ88-superJumbo.jpg","format":"superJumbo","height":1600,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Illustration
+        by Yoshi Sodeoka."}]},{"section":"Technology","subsection":"","title":"Megaupload
+        Founder Can Be Sent to U.S., Judge Says","abstract":"A New Zealand judge ruled
+        on Wednesday that the colorful Internet entrepreneur Kim Dotcom and three
+        of his colleagues could be extradited.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/technology\/megaupload-founder-can-be-sent-to-us-judge-says.html","byline":"By
+        THE ASSOCIATED PRESS","item_type":"Article","updated_date":"2015-12-23T04:27:29-5:00","created_date":"2015-12-23T04:27:37-5:00","published_date":"2015-12-24T11:30:00-5:00","material_type_facet":"News","kicker":"","des_facet":[""],"org_facet":"","per_facet":"","geo_facet":"","multimedia":""},{"section":"World","subsection":"Asia
+        Pacific","title":"A Peek Into the Mind of China\u2019s Internet Users","abstract":"People
+        this year wanted to find out about health, money, the law and love \u2014
+        or marriage, at least.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/world\/asia\/china-internet-top-news-baidu.html","byline":"By
+        AUSTIN RAMZY and PATRICK BOEHLER","item_type":"Article","updated_date":"2015-12-23T03:08:14-5:00","created_date":"2015-12-23T03:08:21-5:00","published_date":"2015-12-24T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Birth
+        Control and Family Planning","Japan Earthquake and Tsunami (2011)","Computers
+        and the Internet","Smartphones","Parades","Renminbi (Currency)"],"org_facet":["Baidu
+        Inc","Communist Party of China","Uniqlo"],"per_facet":["Bi Fujian (1959- )","Hu
+        Jintao"],"geo_facet":["China"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/world\/24chinabaidu08\/24chinabaidu08-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"China,
+        one of Apple''s fastest-growing markets, was among the dozen countries and
+        territories that sold new iPhone 6s and 6s Plus devices during the first weekend
+        that they became available.","copyright":"Damir Sagolj\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/world\/24chinabaidu08\/24chinabaidu08-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"China,
+        one of Apple''s fastest-growing markets, was among the dozen countries and
+        territories that sold new iPhone 6s and 6s Plus devices during the first weekend
+        that they became available.","copyright":"Damir Sagolj\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/world\/24chinabaidu08\/24chinabaidu08-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"China,
+        one of Apple''s fastest-growing markets, was among the dozen countries and
+        territories that sold new iPhone 6s and 6s Plus devices during the first weekend
+        that they became available.","copyright":"Damir Sagolj\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/world\/24chinabaidu08\/24chinabaidu08-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"China,
+        one of Apple''s fastest-growing markets, was among the dozen countries and
+        territories that sold new iPhone 6s and 6s Plus devices during the first weekend
+        that they became available.","copyright":"Damir Sagolj\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/world\/24chinabaidu08\/24chinabaidu08-superJumbo.jpg","format":"superJumbo","height":1366,"width":2048,"type":"image","subtype":"photo","caption":"China,
+        one of Apple''s fastest-growing markets, was among the dozen countries and
+        territories that sold new iPhone 6s and 6s Plus devices during the first weekend
+        that they became available.","copyright":"Damir Sagolj\/Reuters"}]},{"section":"Business
+        Day","subsection":"DealBook","title":"In Brazil, 99Taxis Start-Up Jockeys
+        to Stay Ahead of Uber","abstract":"A new fund-raising round could be a huge
+        lift for the company, based in S\u00e3o Paulo, which has more than twice the
+        market share of Uber.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/business\/dealbook\/in-brazil-99taxis-start-up-jockeys-to-stay-ahead-of-uber.html","byline":"By
+        VINOD SREEHARSHA","item_type":"Article","updated_date":"2015-12-23T14:24:14-5:00","created_date":"2015-12-23T14:24:21-5:00","published_date":"2015-12-24T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Car
+        Services and Livery Cabs","Taxicabs and Taxicab Drivers","Venture Capital"],"org_facet":["99Taxis","Uber
+        Technologies Inc","Tiger Global Management LLC"],"per_facet":"","geo_facet":["Brazil"],"multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/db-taxi\/db-taxi-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Taxis
+        parked in S\u00e3o Paulo during a protest against Uber.","copyright":"Paulo
+        Whitaker\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/db-taxi\/db-taxi-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Taxis
+        parked in S\u00e3o Paulo during a protest against Uber.","copyright":"Paulo
+        Whitaker\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/db-taxi\/db-taxi-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"Taxis
+        parked in S\u00e3o Paulo during a protest against Uber.","copyright":"Paulo
+        Whitaker\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/db-taxi\/db-taxi-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Taxis
+        parked in S\u00e3o Paulo during a protest against Uber.","copyright":"Paulo
+        Whitaker\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/db-taxi\/db-taxi-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"Taxis
+        parked in S\u00e3o Paulo during a protest against Uber.","copyright":"Paulo
+        Whitaker\/Reuters"}]},{"section":"Technology","subsection":"","title":"For
+        the New Year, Let\u2019s Resolve to Improve Our Tech Literacy","abstract":"From
+        politicians\u2019 calls to shut down parts of the Internet to Uber\u2019s
+        labor troubles, the news in 2015 often highlighted a failure to grasp the
+        effects of change.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/technology\/for-the-new-year-lets-resolve-to-improve-our-tech-literacy.html","byline":"By
+        FARHAD MANJOO","item_type":"Article","updated_date":"2015-12-23T07:20:31-5:00","created_date":"2015-12-23T07:20:33-5:00","published_date":"2015-12-24T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Computers
+        and the Internet","Computer Security","Law and Legislation","United States
+        Politics and Government"],"org_facet":"","per_facet":["Smith, Megan J (1964-
+        )","Chopra, Aneesh"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23state-web\/23state-web-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Stuart
+        Goldenberg"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23state-web\/23state-web-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Stuart
+        Goldenberg"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23state-web\/23state-web-articleInline.jpg","format":"Normal","height":116,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Stuart
+        Goldenberg"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23state-web\/23state-web-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Stuart
+        Goldenberg"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23state-web\/23state-web-superJumbo.jpg","format":"superJumbo","height":375,"width":615,"type":"image","subtype":"photo","caption":"","copyright":"Stuart
+        Goldenberg"}]},{"section":"Business Day","subsection":"DealBook","title":"For
+        Martin Shkreli and Others, \u2018No Comment\u2019 Is Not in the Script","abstract":"Executives
+        charged with wrongdoing used to keep quiet and defer to their lawyers. But
+        now they are turning to social media in a legally risky move to proclaim their
+        innocence.","url":"http:\/\/www.nytimes.com\/2015\/12\/23\/business\/dealbook\/no-comment-not-in-their-playbook.html","byline":"By
+        MATTHEW GOLDSTEIN and ALEXANDRA STEVENSON","item_type":"Article","updated_date":"2015-12-22T21:12:05-5:00","created_date":"2015-12-22T21:12:12-5:00","published_date":"2015-12-23T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Social
+        Media","Securities and Commodities Violations","Drugs (Pharmaceuticals)"],"org_facet":["Twitter","Turing
+        Pharmaceuticals AG"],"per_facet":["Shkreli, Martin (1983- )","Tilton, Lynn","Shrem,
+        Charles","Cuban, Mark","Newman, Joshua Bryce (1979- )"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23DB-DEFIANT-COMBO\/23DB-DEFIANT-COMBO-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"From
+        left, Martin Shkreli, who ran drug companies; Lynn Tilton, a private equity
+        executive; and Charlie Shrem, ex-chief of a money transfer service.","copyright":"From
+        left: Craig Ruttle\/Associated Press; Robert F. Bukaty\/Associated Press;
+        Adrees Latif\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23DB-DEFIANT-COMBO\/23DB-DEFIANT-COMBO-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"From
+        left, Martin Shkreli, who ran drug companies; Lynn Tilton, a private equity
+        executive; and Charlie Shrem, ex-chief of a money transfer service.","copyright":"From
+        left: Craig Ruttle\/Associated Press; Robert F. Bukaty\/Associated Press;
+        Adrees Latif\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23DB-DEFIANT-COMBO\/23DB-DEFIANT-COMBO-articleInline.jpg","format":"Normal","height":127,"width":190,"type":"image","subtype":"photo","caption":"From
+        left, Martin Shkreli, who ran drug companies; Lynn Tilton, a private equity
+        executive; and Charlie Shrem, ex-chief of a money transfer service.","copyright":"From
+        left: Craig Ruttle\/Associated Press; Robert F. Bukaty\/Associated Press;
+        Adrees Latif\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23DB-DEFIANT-COMBO\/23DB-DEFIANT-COMBO-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"From
+        left, Martin Shkreli, who ran drug companies; Lynn Tilton, a private equity
+        executive; and Charlie Shrem, ex-chief of a money transfer service.","copyright":"From
+        left: Craig Ruttle\/Associated Press; Robert F. Bukaty\/Associated Press;
+        Adrees Latif\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23DB-DEFIANT-COMBO\/23DB-DEFIANT-COMBO-superJumbo.jpg","format":"superJumbo","height":1365,"width":2048,"type":"image","subtype":"photo","caption":"From
+        left, Martin Shkreli, who ran drug companies; Lynn Tilton, a private equity
+        executive; and Charlie Shrem, ex-chief of a money transfer service.","copyright":"From
+        left: Craig Ruttle\/Associated Press; Robert F. Bukaty\/Associated Press;
+        Adrees Latif\/Reuters"}]},{"section":"Business Day","subsection":"Media","title":"Bedtime
+        Reading, Written by a Robot Just for You","abstract":"A mediocre gift inspired
+        the creation of Lost My Name, a start-up that personalizes books for hundreds
+        of thousands of young readers.","url":"http:\/\/www.nytimes.com\/2015\/12\/23\/business\/media\/personalizing-books-via-robot.html","byline":"By
+        ALEXANDRA ALTER","item_type":"Article","updated_date":"2015-12-22T20:21:27-5:00","created_date":"2015-12-22T20:21:34-5:00","published_date":"2015-12-23T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Book
+        Trade and Publishing","Children and Childhood","Books and Literature","Computers
+        and the Internet"],"org_facet":["Lostmy.name"],"per_facet":["Cadji-Newby,
+        David","Oron, Tal","Serapicos, Pedro","Sharabi, Asi"],"geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23kidsbiooks-hp\/23kidsbiooks-hp-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Image
+        from the book \u201cIntergalactic Journey Home.\u201d","copyright":"Lost My
+        Name"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23kidsbiooks-hp\/23kidsbiooks-hp-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Image
+        from the book \u201cIntergalactic Journey Home.\u201d","copyright":"Lost My
+        Name"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23kidsbiooks-hp\/23kidsbiooks-hp-articleInline.jpg","format":"Normal","height":67,"width":190,"type":"image","subtype":"photo","caption":"Image
+        from the book \u201cIntergalactic Journey Home.\u201d","copyright":"Lost My
+        Name"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23kidsbiooks-hp\/23kidsbiooks-hp-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Image
+        from the book \u201cIntergalactic Journey Home.\u201d","copyright":"Lost My
+        Name"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/23\/business\/23kidsbiooks-hp\/23kidsbiooks-hp-superJumbo.jpg","format":"superJumbo","height":724,"width":2048,"type":"image","subtype":"photo","caption":"Image
+        from the book \u201cIntergalactic Journey Home.\u201d","copyright":"Lost My
+        Name"}]},{"section":"N.Y. \/ Region","subsection":"","title":"U.S. Says Hacker
+        Stole IDs and Unreleased Scripts From Host of Celebrities","abstract":"The
+        charges against Alonzo Knowles illustrate the ease with which private email
+        contacts, even for security-conscious entertainers, can be exploited.","url":"http:\/\/www.nytimes.com\/2015\/12\/23\/nyregion\/us-says-hacker-stole-ids-and-unreleased-scripts-from-host-of-celebrities.html","byline":"By
+        BENJAMIN MUELLER","item_type":"Article","updated_date":"2015-12-22T20:25:42-5:00","created_date":"2015-12-22T19:02:43-5:00","published_date":"2015-12-23T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Cyberattacks
+        and Hackers","Celebrities"],"org_facet":"","per_facet":["Knowles, Alonzo"],"geo_facet":"","multimedia":""},{"section":"Business
+        Day","subsection":"DealBook","title":"In Net-a-Porter and Yoox Merger, a Fight
+        Behind the Scenes","abstract":"It looked like a smooth combination for two
+        leading luxury e-commerce firms. However, a battle was simmering.","url":"http:\/\/www.nytimes.com\/2015\/12\/22\/business\/dealbook\/a-fight-behind-the-scenes-of-a-luxury-retail-merger.html","byline":"By
+        MICHAEL J. de la MERCED","item_type":"Article","updated_date":"2015-12-21T20:38:07-5:00","created_date":"2015-12-21T20:38:14-5:00","published_date":"2015-12-22T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["E-Commerce","Luxury
+        Goods and Services","Shopping and Retail","Mergers, Acquisitions and Divestitures"],"org_facet":["Net-A-Porter","Yoox
+        Group SpA","Compagnie Financiere Richemont SA"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/22\/business\/22DB-FASHION\/22DB-FASHION-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Richemont,
+        known for its luxury watch brands including Cartier, is accused of selling
+        its stake in Net-a-Porter for too little.","copyright":"Denis Balibouse\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/22\/business\/22DB-FASHION\/22DB-FASHION-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Richemont,
+        known for its luxury watch brands including Cartier, is accused of selling
+        its stake in Net-a-Porter for too little.","copyright":"Denis Balibouse\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/22\/business\/22DB-FASHION\/22DB-FASHION-articleInline.jpg","format":"Normal","height":124,"width":190,"type":"image","subtype":"photo","caption":"Richemont,
+        known for its luxury watch brands including Cartier, is accused of selling
+        its stake in Net-a-Porter for too little.","copyright":"Denis Balibouse\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/22\/business\/22DB-FASHION\/22DB-FASHION-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Richemont,
+        known for its luxury watch brands including Cartier, is accused of selling
+        its stake in Net-a-Porter for too little.","copyright":"Denis Balibouse\/Reuters"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/22\/business\/22DB-FASHION\/22DB-FASHION-superJumbo.jpg","format":"superJumbo","height":1340,"width":2048,"type":"image","subtype":"photo","caption":"Richemont,
+        known for its luxury watch brands including Cartier, is accused of selling
+        its stake in Net-a-Porter for too little.","copyright":"Denis Balibouse\/Reuters"}]},{"section":"Technology","subsection":"Personal
+        Tech","title":"For Parental Controls, iPhones Beat Androids","abstract":"The
+        Apple phones were able to accomplish a range of restrictions, like blocking
+        content and purchases, while Android phones offered incomplete solutions.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/technology\/personaltech\/for-parental-controls-iphones-beat-androids.html","byline":"By
+        BRIAN X. CHEN","item_type":"Article","updated_date":"2015-12-23T15:57:05-5:00","created_date":"2015-12-23T15:57:07-5:00","published_date":"2015-12-24T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Smartphones","iPhone","Android
+        (Operating System)","Parenting","Children and Childhood"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/24TECHFIX\/24TECHFIX-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/24TECHFIX\/24TECHFIX-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/24TECHFIX\/24TECHFIX-articleInline.jpg","format":"Normal","height":193,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/24TECHFIX\/24TECHFIX-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/business\/24TECHFIX\/24TECHFIX-superJumbo.jpg","format":"superJumbo","height":2048,"width":2019,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"}]},{"section":"Travel","subsection":"","title":"12
+        Travel Apps Worth Keeping in 2016","abstract":"Travel is about tapping the
+        world, not a screen, so let\u2019s end the year with an app purge, keeping
+        only the most essential.","url":"http:\/\/www.nytimes.com\/2015\/12\/27\/travel\/vacation-iphone-apps.html","byline":"By
+        STEPHANIE ROSENBLOOM","item_type":"Article","updated_date":"2015-12-21T05:50:01-5:00","created_date":"2015-12-21T05:50:14-5:00","published_date":"2015-12-27T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Mobile
+        Applications","Travel and Vacations","Smartphones"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/travel\/27GETAWAY1\/27GETAWAY1-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Graham
+        Roumieu"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/travel\/27GETAWAY1\/27GETAWAY1-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Graham
+        Roumieu"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/travel\/27GETAWAY1\/27GETAWAY1-articleInline.jpg","format":"Normal","height":147,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Graham
+        Roumieu"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/travel\/27GETAWAY1\/27GETAWAY1-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Graham
+        Roumieu"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/27\/travel\/27GETAWAY1\/27GETAWAY1-superJumbo.jpg","format":"superJumbo","height":1585,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Graham
+        Roumieu"}]},{"section":"Technology","subsection":"Personal Tech","title":"How
+        to Use Smart Reply in Gmail Inbox","abstract":"The feature composes brief
+        responses to email messages that you\u2019ve received.","url":"http:\/\/www.nytimes.com\/2015\/12\/25\/technology\/personaltech\/how-to-use-smart-reply-in-gmail-inbox.html","byline":"By
+        J. D. BIERSDORFER","item_type":"Article","updated_date":"2015-12-24T09:37:40-5:00","created_date":"2015-12-24T09:37:43-5:00","published_date":"2015-12-25T00:00:00-5:00","material_type_facet":"Question","kicker":"","des_facet":["Mobile
+        Applications","E-Mail","Smart Reply"],"org_facet":["Google Inc"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/technology\/personaltech\/25techtipwebART\/25techtipwebART-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"The
+        Smart Reply feature of the Inbox by Gmail app suggests its own quick responses
+        to messages.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/technology\/personaltech\/25techtipwebART\/25techtipwebART-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"The
+        Smart Reply feature of the Inbox by Gmail app suggests its own quick responses
+        to messages.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/technology\/personaltech\/25techtipwebART\/25techtipwebART-articleInline.jpg","format":"Normal","height":304,"width":190,"type":"image","subtype":"photo","caption":"The
+        Smart Reply feature of the Inbox by Gmail app suggests its own quick responses
+        to messages.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/technology\/personaltech\/25techtipwebART\/25techtipwebART-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"The
+        Smart Reply feature of the Inbox by Gmail app suggests its own quick responses
+        to messages.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/25\/technology\/personaltech\/25techtipwebART\/25techtipwebART-superJumbo.jpg","format":"superJumbo","height":1920,"width":1200,"type":"image","subtype":"photo","caption":"The
+        Smart Reply feature of the Inbox by Gmail app suggests its own quick responses
+        to messages.","copyright":"The New York Times"}]},{"section":"Technology","subsection":"Personal
+        Tech","title":"Watching Video on Amazon Prime","abstract":"An Amazon Prime
+        membership offers thousands of streaming videos that can be watched on a multitude
+        of devices \u2014 not all of the videos are free, however.","url":"http:\/\/www.nytimes.com\/2015\/12\/26\/technology\/personaltech\/watching-video-on-amazon-prime.html","byline":"By
+        J. D. BIERSDORFER","item_type":"Article","updated_date":"2015-12-24T09:37:40-5:00","created_date":"2015-12-24T09:37:43-5:00","published_date":"2015-12-26T00:00:00-5:00","material_type_facet":"Question","kicker":"","des_facet":["Video
+        Recordings, Downloads and Streaming","Amazon Prime","Web-Original Programming","Television","Movies"],"org_facet":["Amazon.com
+        Inc"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/26\/technology\/personaltech\/26techtipwebART\/26techtipwebART-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Amazon\u2019s
+        video offerings can be viewed on its mobile apps for Android or iOS along
+        with other devices.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/26\/technology\/personaltech\/26techtipwebART\/26techtipwebART-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Amazon\u2019s
+        video offerings can be viewed on its mobile apps for Android or iOS along
+        with other devices.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/26\/technology\/personaltech\/26techtipwebART\/26techtipwebART-articleInline.jpg","format":"Normal","height":304,"width":190,"type":"image","subtype":"photo","caption":"Amazon\u2019s
+        video offerings can be viewed on its mobile apps for Android or iOS along
+        with other devices.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/26\/technology\/personaltech\/26techtipwebART\/26techtipwebART-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Amazon\u2019s
+        video offerings can be viewed on its mobile apps for Android or iOS along
+        with other devices.","copyright":"The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/26\/technology\/personaltech\/26techtipwebART\/26techtipwebART-superJumbo.jpg","format":"superJumbo","height":1920,"width":1200,"type":"image","subtype":"photo","caption":"Amazon\u2019s
+        video offerings can be viewed on its mobile apps for Android or iOS along
+        with other devices.","copyright":"The New York Times"}]},{"section":"Technology","subsection":"Personal
+        Tech","title":"How to Track Data Use, and Choose the Right Smartphone Plan","abstract":"Most
+        smartphone plans either charge for overages or constrict data flow when limits
+        are reached. So knowing how much one is consuming is crucial.","url":"http:\/\/www.nytimes.com\/2015\/12\/17\/technology\/personaltech\/how-to-track-data-use-and-choose-the-right-smartphone-plan.html","byline":"By
+        BRIAN X. CHEN","item_type":"Article","updated_date":"2015-12-16T15:06:57-5:00","created_date":"2015-12-16T15:06:59-5:00","published_date":"2015-12-17T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Smartphones","Wireless
+        Communications","Mobile Applications","Telephones and Telecommunications"],"org_facet":["Sprint
+        Nextel Corporation","T-Mobile US Inc","Verizon Communications Inc","AT&T Inc"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/technology\/17techfix-web\/17techfix-web-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/technology\/17techfix-web\/17techfix-web-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/technology\/17techfix-web\/17techfix-web-articleInline.jpg","format":"Normal","height":137,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/technology\/17techfix-web\/17techfix-web-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/17\/technology\/17techfix-web\/17techfix-web-superJumbo.jpg","format":"superJumbo","height":1481,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Minh
+        Uong\/The New York Times"}]},{"section":"Technology","subsection":"","title":"How
+        to Sell or Recycle Old Electronics","abstract":"Reviewing the gadget trade-in
+        and recycling programs offered by Amazon, Gazelle and Best Buy.","url":"http:\/\/www.nytimes.com\/2015\/12\/03\/technology\/how-to-sell-or-recycle-old-electronics.html","byline":"By
+        BRIAN X. CHEN","item_type":"Article","updated_date":"2015-12-02T12:36:22-5:00","created_date":"2015-12-02T12:36:29-5:00","published_date":"2015-12-03T00:00:00-5:00","material_type_facet":"News","kicker":"","des_facet":["Waste
+        Materials and Disposal","Recycling of Waste Materials","Electronics","Hazardous
+        and Toxic Substances","Gift Cards and Certificates"],"org_facet":["Amazon.com
+        Inc","Best BUY Company Inc","Gazelle.com","PayPal"],"per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/03\/technology\/03techfix-illo\/03techfix-illo-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"","copyright":"Tom
+        Grillo"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/03\/technology\/03techfix-illo\/03techfix-illo-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"","copyright":"Tom
+        Grillo"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/03\/technology\/03techfix-illo\/03techfix-illo-articleInline.jpg","format":"Normal","height":133,"width":190,"type":"image","subtype":"photo","caption":"","copyright":"Tom
+        Grillo"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/03\/technology\/03techfix-illo\/03techfix-illo-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"","copyright":"Tom
+        Grillo"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/03\/technology\/03techfix-illo\/03techfix-illo-superJumbo.jpg","format":"superJumbo","height":1434,"width":2048,"type":"image","subtype":"photo","caption":"","copyright":"Tom
+        Grillo"}]},{"section":"Technology","subsection":"Personal Tech","title":"Moving
+        Old Programs to a New PC","abstract":"There is a variety of movers of old
+        files and settings that will get them to your new PC home.","url":"http:\/\/www.nytimes.com\/2015\/12\/24\/technology\/personaltech\/moving-old-programs-to-a-new-pc.html","byline":"By
+        J. D. BIERSDORFER","item_type":"Article","updated_date":"2015-12-23T09:29:51-5:00","created_date":"2015-12-23T09:29:54-5:00","published_date":"2015-12-24T00:00:00-5:00","material_type_facet":"Question","kicker":"","des_facet":["Computers
+        and the Internet","Windows (Operating System)"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":[{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techtipwebART\/24techtipwebART-thumbStandard.jpg","format":"Standard
+        Thumbnail","height":75,"width":75,"type":"image","subtype":"photo","caption":"Microsoft
+        has formed a partnership with Laplink to provide free software to move settings
+        and files from an old computer to a new Windows 10 PC.","copyright":"The New
+        York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techtipwebART\/24techtipwebART-thumbLarge.jpg","format":"thumbLarge","height":150,"width":150,"type":"image","subtype":"photo","caption":"Microsoft
+        has formed a partnership with Laplink to provide free software to move settings
+        and files from an old computer to a new Windows 10 PC.","copyright":"The New
+        York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techtipwebART\/24techtipwebART-articleInline.jpg","format":"Normal","height":148,"width":190,"type":"image","subtype":"photo","caption":"Microsoft
+        has formed a partnership with Laplink to provide free software to move settings
+        and files from an old computer to a new Windows 10 PC.","copyright":"The New
+        York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techtipwebART\/24techtipwebART-mediumThreeByTwo210.jpg","format":"mediumThreeByTwo210","height":140,"width":210,"type":"image","subtype":"photo","caption":"Microsoft
+        has formed a partnership with Laplink to provide free software to move settings
+        and files from an old computer to a new Windows 10 PC.","copyright":"The New
+        York Times"},{"url":"http:\/\/static01.nyt.com\/images\/2015\/12\/24\/technology\/personaltech\/24techtipwebART\/24techtipwebART-superJumbo.jpg","format":"superJumbo","height":646,"width":832,"type":"image","subtype":"photo","caption":"Microsoft
+        has formed a partnership with Laplink to provide free software to move settings
+        and files from an old computer to a new Windows 10 PC.","copyright":"The New
+        York Times"}]},{"section":"Technology","subsection":"Personal Tech","title":"Locating
+        Missing Mac Mail","abstract":"There are ways to find the missing messages,
+        or even rebuild the mailbox.","url":"http:\/\/www.nytimes.com\/2015\/12\/23\/technology\/personaltech\/locating-missing-mac-mail.html","byline":"By
+        J. D. BIERSDORFER","item_type":"Article","updated_date":"2015-12-24T13:55:53-5:00","created_date":"2015-12-22T09:53:08-5:00","published_date":"2015-12-23T00:00:00-5:00","material_type_facet":"Question","kicker":"","des_facet":["E-Mail","iOS
+        (Operating System)","Mac OS (Operating System)","Computers and the Internet"],"org_facet":"","per_facet":"","geo_facet":"","multimedia":""}]}'
+    http_version: 
+  recorded_at: Sun, 27 Dec 2015 20:29:37 GMT
+- request:
+    method: get
+    uri: http://api.seatgeek.com/2/events?datetime_local.gte=2015-12-27&venue.city=Boston
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.seatgeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - TornadoServer/3.2 (Gunicorn/18.0)
+      Etag:
+      - '"69df2ad57d6977e207c4863993ba4fb49a61328f"'
+      Cache-Control:
+      - max-age=1800
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sun, 27 Dec 2015 20:29:19 GMT
+      X-Varnish:
+      - '1569953417'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"per_page":10,"total":1173,"page":1,"geolocation":null},"events":[{"links":[],"id":2636941,"stats":{"listing_count":25,"average_price":75.0,"lowest_price_good_deals":29.0,"lowest_price":29.0,"highest_price":95.0},"title":"Disney
+        On Ice - Boston","announce_date":"2015-06-02T00:00:00","score":0.54291,"date_tbd":false,"type":"family","datetime_local":"2015-12-27T12:00:00","visible_until_utc":"2015-12-27T21:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"performers":[{"stats":{"event_count":746},"name":"Disney
+        On Ice","short_name":"Disney On Ice","url":"https://seatgeek.com/disney-on-ice-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-ff58f7/5908/huge.jpg","home_venue_id":null,"primary":true,"score":0.42633,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-ff58f7/5908/huge.jpg"},"slug":"disney-on-ice","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":5908},{"stats":{"event_count":116},"name":"Disney
+        On Ice: Treasure Trove","short_name":"Disney On Ice: Treasure Trove","url":"https://seatgeek.com/disney-on-ice-treasure-trove-tickets","type":"theater_family","image":null,"home_venue_id":null,"slug":"disney-on-ice-treasure-trove","score":0.43528,"images":{},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"has_upcoming_events":true,"id":18466},{"stats":{"event_count":163},"name":"Disney
+        On Ice: 100 Years of Magic","short_name":"Disney On Ice: 100 Years of Magic","url":"https://seatgeek.com/disney-on-ice-100-years-of-magic-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-100-years-of-magic-8b1fce/18482/huge.jpg","home_venue_id":null,"slug":"disney-on-ice-100-years-of-magic","score":0.46141,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-100-years-of-magic-8b1fce/18482/huge.jpg"},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":18482}],"url":"https://seatgeek.com/disney-on-ice-boston-tickets/family/2015-12-27-12-pm/2636941/","created_at":"2015-06-02T00:00:00","venue":{"city":"Boston","name":"Agganis
+        Arena","extended_address":"Boston, MA 02215","url":"https://seatgeek.com/venues/agganis-arena/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"agganis-arena","state":"MA","score":0.64567,"postal_code":"02215","location":{"lat":42.3514,"lon":-71.1177},"address":"925
+        Commonwealth Ave","timezone":"America/New_York","id":952},"short_title":"Disney
+        On Ice - Boston","datetime_utc":"2015-12-27T17:00:00","datetime_tbd":false},{"links":[],"id":2809435,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Disney
+        On Ice: 100 Years of Magic - Boston","announce_date":"2015-09-09T00:00:00","score":0.53783,"date_tbd":false,"type":"theater","datetime_local":"2015-12-27T12:00:00","visible_until_utc":"2015-12-27T21:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":163},"name":"Disney
+        On Ice: 100 Years of Magic","short_name":"Disney On Ice: 100 Years of Magic","url":"https://seatgeek.com/disney-on-ice-100-years-of-magic-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-100-years-of-magic-8b1fce/18482/huge.jpg","home_venue_id":null,"primary":true,"score":0.46141,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-100-years-of-magic-8b1fce/18482/huge.jpg"},"slug":"disney-on-ice-100-years-of-magic","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":18482}],"url":"https://seatgeek.com/disney-on-ice-100-years-of-magic-boston-tickets/theater/2015-12-27-12-pm/2809435/","created_at":"2015-09-09T00:00:00","venue":{"city":"Boston","name":"Agganis
+        Arena","extended_address":"Boston, MA 02215","url":"https://seatgeek.com/venues/agganis-arena/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"agganis-arena","state":"MA","score":0.64567,"postal_code":"02215","location":{"lat":42.3514,"lon":-71.1177},"address":"925
+        Commonwealth Ave","timezone":"America/New_York","id":952},"short_title":"Disney
+        On Ice: 100 Years of Magic - Boston","datetime_utc":"2015-12-27T17:00:00","datetime_tbd":false},{"links":[],"id":2475222,"stats":{"listing_count":5,"average_price":189.5,"lowest_price_good_deals":178.0,"lowest_price":178.0,"highest_price":201.0},"title":"Once
+        - Boston","announce_date":"2015-01-10T00:00:00","score":0.47401,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2015-12-27T13:00:00","visible_until_utc":"2015-12-27T22:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"stats":{"event_count":107},"name":"Once","short_name":"Once","url":"https://seatgeek.com/once-tickets","type":"theater_broadway_national_tours","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/once-40916d/12705/huge.jpg","home_venue_id":null,"primary":true,"score":0.44065,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/once-40916d/12705/huge.jpg"},"slug":"once","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"has_upcoming_events":true,"id":12705},{"stats":{"event_count":47},"name":"Once","short_name":"Once","url":"https://seatgeek.com/once-3-tickets","type":"theater_broadway_national_tours","image":null,"home_venue_id":null,"slug":"once-3","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"has_upcoming_events":true,"id":371040}],"url":"https://seatgeek.com/once-boston-tickets/shubert-theatre-2015-12-27-1-pm/broadway/2475222/","created_at":"2015-01-10T00:00:00","venue":{"city":"Boston","name":"Shubert
+        Theatre","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/shubert-theatre/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"shubert-theatre","state":"MA","score":0.5665,"postal_code":"02116","location":{"lat":42.3504,"lon":-71.0654},"address":"265
+        Tremont St","timezone":"America/New_York","id":4485},"short_title":"Once -
+        Boston","datetime_utc":"2015-12-27T18:00:00","datetime_tbd":false},{"links":[],"id":2682768,"stats":{"listing_count":6,"average_price":108.0,"lowest_price_good_deals":93.0,"lowest_price":93.0,"highest_price":121.0},"title":"Boston
+        Ballet - Boston","announce_date":"2015-07-09T00:00:00","score":0.53073,"date_tbd":false,"type":"dance_performance_tour","datetime_local":"2015-12-27T13:00:00","visible_until_utc":"2015-12-27T22:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"performers":[{"stats":{"event_count":7},"name":"Boston
+        Ballet","short_name":"Boston Ballet","url":"https://seatgeek.com/boston-ballet-tickets","type":"theater_dance_performance_tour","image":null,"home_venue_id":null,"primary":true,"score":0.44006,"images":{},"slug":"boston-ballet","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":6688},{"stats":{"event_count":143},"name":"The
+        Nutcracker","short_name":"The Nutcracker","url":"https://seatgeek.com/the-nutcracker-tickets","type":"theater_dance_performance_tour","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-nutcracker-8e9ccd/7746/huge.jpg","home_venue_id":null,"slug":"the-nutcracker","score":0.46817,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-nutcracker-8e9ccd/7746/huge.jpg"},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":7746}],"url":"https://seatgeek.com/boston-ballet-boston-tickets/dance/2015-12-27-1-pm/2682768/","created_at":"2015-07-09T00:00:00","venue":{"city":"Boston","name":"Boston
+        Opera House","extended_address":"Boston, MA 02111","url":"https://seatgeek.com/venues/boston-opera-house/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-opera-house","state":"MA","score":0.62438,"postal_code":"02111","location":{"lat":42.3586,"lon":-71.0567},"address":"539
+        Washington Street","timezone":"America/New_York","id":2501},"short_title":"Boston
+        Ballet - Boston","datetime_utc":"2015-12-27T18:00:00","datetime_tbd":false},{"links":[],"id":2843540,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Blue
+        Man Group - Boston","announce_date":"2015-10-07T00:00:00","score":0.42858,"date_tbd":false,"type":"theater","datetime_local":"2015-12-27T14:00:00","visible_until_utc":"2015-12-27T23:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":1383},"name":"Blue
+        Man Group","short_name":"Blue Man Group","url":"https://seatgeek.com/blue-man-group-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/blue-man-group-da8746/5194/huge.jpg","home_venue_id":null,"primary":true,"score":0.40162,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/blue-man-group-da8746/5194/huge.jpg"},"slug":"blue-man-group","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":5194,"genres":[{"slug":"experimental","primary":true,"name":"experimental"}]}],"url":"https://seatgeek.com/blue-man-group-boston-tickets/theater/2015-12-27-2-pm/2843540/","created_at":"2015-10-07T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/charles-playhouse/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse","state":"MA","score":0.4256,"postal_code":"02116","location":{"lat":42.3503,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America/New_York","id":3188},"short_title":"Blue
+        Man Group - Boston","datetime_utc":"2015-12-27T19:00:00","datetime_tbd":false},{"links":[],"id":2896438,"stats":{"listing_count":null,"average_price":null,"lowest_price_good_deals":null,"lowest_price":null,"highest_price":null},"title":"Shear
+        Madness - Boston","announce_date":"2015-10-30T00:00:00","score":0.42201,"date_tbd":false,"type":"theater","datetime_local":"2015-12-27T15:00:00","visible_until_utc":"2015-12-28T00:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":362},"name":"Shear
+        Madness","short_name":"Shear Madness","url":"https://seatgeek.com/shear-madness-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/shear-madness-ea9208/11748/huge.jpg","home_venue_id":null,"primary":true,"score":0.35075,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/shear-madness-ea9208/11748/huge.jpg"},"slug":"shear-madness","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":11748}],"url":"https://seatgeek.com/shear-madness-boston-tickets/theater/2015-12-27-3-pm/2896438/","created_at":"2015-10-30T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse Second Stage","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/charles-playhouse-second-stage/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse-second-stage","state":"MA","score":0,"postal_code":"02116","location":{"lat":42.35,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America/New_York","id":51387},"short_title":"Shear
+        Madness - Boston","datetime_utc":"2015-12-27T20:00:00","datetime_tbd":false},{"links":[],"id":2636940,"stats":{"listing_count":31,"average_price":71.0,"lowest_price_good_deals":33.0,"lowest_price":33.0,"highest_price":95.0},"title":"Disney
+        On Ice Treasure Trove Long Island - Boston","announce_date":"2015-06-02T00:00:00","score":0.52449,"date_tbd":false,"type":"family","datetime_local":"2015-12-27T16:00:00","visible_until_utc":"2015-12-28T01:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"performers":[{"stats":{"event_count":746},"name":"Disney
+        On Ice","short_name":"Disney On Ice","url":"https://seatgeek.com/disney-on-ice-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-ff58f7/5908/huge.jpg","home_venue_id":null,"slug":"disney-on-ice","score":0.42633,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/disney-on-ice-ff58f7/5908/huge.jpg"},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":5908},{"stats":{"event_count":116},"name":"Disney
+        On Ice: Treasure Trove","short_name":"Disney On Ice: Treasure Trove","url":"https://seatgeek.com/disney-on-ice-treasure-trove-tickets","type":"theater_family","image":null,"home_venue_id":null,"slug":"disney-on-ice-treasure-trove","score":0.43528,"images":{},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3050000,"name":"family"}],"has_upcoming_events":true,"id":18466},{"stats":{"event_count":75},"name":"Disney
+        On Ice Treasure Trove Long Island","short_name":"Disney On Ice Treasure Trove
+        Long Island","url":"https://seatgeek.com/disney-on-ice-treasure-trove-long-island-tickets","type":"theater","image":null,"home_venue_id":null,"primary":true,"score":0.41991,"images":{},"slug":"disney-on-ice-treasure-trove-long-island","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":86255}],"url":"https://seatgeek.com/disney-on-ice-treasure-trove-long-island-boston-tickets/family/2015-12-27-4-pm/2636940/","created_at":"2015-06-02T00:00:00","venue":{"city":"Boston","name":"Agganis
+        Arena","extended_address":"Boston, MA 02215","url":"https://seatgeek.com/venues/agganis-arena/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"agganis-arena","state":"MA","score":0.64567,"postal_code":"02215","location":{"lat":42.3514,"lon":-71.1177},"address":"925
+        Commonwealth Ave","timezone":"America/New_York","id":952},"short_title":"Disney
+        On Ice Treasure Trove Long Island - Boston","datetime_utc":"2015-12-27T21:00:00","datetime_tbd":false},{"links":[],"id":2843539,"stats":{"listing_count":1,"average_price":106.0,"lowest_price_good_deals":106.0,"lowest_price":106.0,"highest_price":106.0},"title":"Blue
+        Man Group - Boston","announce_date":"2015-10-07T00:00:00","score":0.43938,"date_tbd":false,"type":"theater","datetime_local":"2015-12-27T17:00:00","visible_until_utc":"2015-12-28T02:00:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"performers":[{"stats":{"event_count":1383},"name":"Blue
+        Man Group","short_name":"Blue Man Group","url":"https://seatgeek.com/blue-man-group-tickets","type":"theater","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/blue-man-group-da8746/5194/huge.jpg","home_venue_id":null,"primary":true,"score":0.40162,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/blue-man-group-da8746/5194/huge.jpg"},"slug":"blue-man-group","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"}],"has_upcoming_events":true,"id":5194,"genres":[{"slug":"experimental","primary":true,"name":"experimental"}]}],"url":"https://seatgeek.com/blue-man-group-boston-tickets/theater/2015-12-27-5-pm/2843539/","created_at":"2015-10-07T00:00:00","venue":{"city":"Boston","name":"Charles
+        Playhouse","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/charles-playhouse/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"charles-playhouse","state":"MA","score":0.4256,"postal_code":"02116","location":{"lat":42.3503,"lon":-71.066},"address":"74
+        Warrenton Street","timezone":"America/New_York","id":3188},"short_title":"Blue
+        Man Group - Boston","datetime_utc":"2015-12-27T22:00:00","datetime_tbd":false},{"links":[],"id":2682770,"stats":{"listing_count":58,"average_price":123.3,"lowest_price_good_deals":93,"lowest_price":93,"highest_price":154},"title":"Boston
+        Ballet - Boston","announce_date":"2015-07-09T00:00:00","score":0.55435,"date_tbd":false,"type":"dance_performance_tour","datetime_local":"2015-12-27T17:30:00","visible_until_utc":"2015-12-28T02:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"performers":[{"stats":{"event_count":7},"name":"Boston
+        Ballet","short_name":"Boston Ballet","url":"https://seatgeek.com/boston-ballet-tickets","type":"theater_dance_performance_tour","image":null,"home_venue_id":null,"primary":true,"score":0.44006,"images":{},"slug":"boston-ballet","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":6688},{"stats":{"event_count":143},"name":"The
+        Nutcracker","short_name":"The Nutcracker","url":"https://seatgeek.com/the-nutcracker-tickets","type":"theater_dance_performance_tour","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-nutcracker-8e9ccd/7746/huge.jpg","home_venue_id":null,"slug":"the-nutcracker","score":0.46817,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/the-nutcracker-8e9ccd/7746/huge.jpg"},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3060000,"name":"dance_performance_tour"}],"has_upcoming_events":true,"id":7746}],"url":"https://seatgeek.com/boston-ballet-boston-tickets/dance/2015-12-27-5-30-pm/2682770/","created_at":"2015-07-09T00:00:00","venue":{"city":"Boston","name":"Boston
+        Opera House","extended_address":"Boston, MA 02111","url":"https://seatgeek.com/venues/boston-opera-house/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"boston-opera-house","state":"MA","score":0.62438,"postal_code":"02111","location":{"lat":42.3586,"lon":-71.0567},"address":"539
+        Washington Street","timezone":"America/New_York","id":2501},"short_title":"Boston
+        Ballet - Boston","datetime_utc":"2015-12-27T22:30:00","datetime_tbd":false},{"links":[],"id":2475221,"stats":{"listing_count":3,"average_price":175.5,"lowest_price_good_deals":174.0,"lowest_price":174.0,"highest_price":177.0},"title":"Once
+        - Boston","announce_date":"2015-01-10T00:00:00","score":0.49506,"date_tbd":false,"type":"broadway_tickets_national","datetime_local":"2015-12-27T18:30:00","visible_until_utc":"2015-12-28T03:30:00","time_tbd":false,"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"performers":[{"stats":{"event_count":107},"name":"Once","short_name":"Once","url":"https://seatgeek.com/once-tickets","type":"theater_broadway_national_tours","image":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/once-40916d/12705/huge.jpg","home_venue_id":null,"primary":true,"score":0.44065,"images":{"huge":"https://chairnerd.global.ssl.fastly.net/images/performers-landscape/once-40916d/12705/huge.jpg"},"slug":"once","taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"has_upcoming_events":true,"id":12705},{"stats":{"event_count":1},"name":"Once
+        Boston","short_name":"Once Boston","url":"https://seatgeek.com/once-boston-tickets","type":"band","image":null,"home_venue_id":null,"slug":"once-boston","score":0.33714,"images":{},"taxonomies":[{"parent_id":null,"id":2000000,"name":"concert"}],"has_upcoming_events":true,"id":346762},{"stats":{"event_count":47},"name":"Once","short_name":"Once","url":"https://seatgeek.com/once-3-tickets","type":"theater_broadway_national_tours","image":null,"home_venue_id":null,"slug":"once-3","score":0,"images":{},"taxonomies":[{"parent_id":null,"id":3000000,"name":"theater"},{"parent_id":3000000,"id":3030000,"name":"broadway_tickets_national"}],"has_upcoming_events":true,"id":371040}],"url":"https://seatgeek.com/once-boston-tickets/shubert-theatre-2015-12-27-6-30-pm/broadway/2475221/","created_at":"2015-01-10T00:00:00","venue":{"city":"Boston","name":"Shubert
+        Theatre","extended_address":"Boston, MA 02116","url":"https://seatgeek.com/venues/shubert-theatre/tickets/","country":"US","display_location":"Boston,
+        MA","links":[],"slug":"shubert-theatre","state":"MA","score":0.5665,"postal_code":"02116","location":{"lat":42.3504,"lon":-71.0654},"address":"265
+        Tremont St","timezone":"America/New_York","id":4485},"short_title":"Once -
+        Boston","datetime_utc":"2015-12-27T23:30:00","datetime_tbd":false}]}'
+    http_version: 
+  recorded_at: Sun, 27 Dec 2015 20:29:37 GMT
+recorded_with: VCR 2.5.0

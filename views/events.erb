@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="callout primary" id="events">
+      <h3>Today's events in <%=@city%>, <%=@state%></h3>
+          <% @events.each do |event| %>
+            <div>
+                <p><strong><a href="<%=event["url"]%>"><%= event["title"] %></a></strong></p>
+                <p><%= event["venue"]["name"] %></p>
+                <p><%= event["venue"]["address"] %></p>
+            </div>
+          <% end %>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</div>
